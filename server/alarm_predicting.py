@@ -189,8 +189,7 @@ pred_by_loc = {"last_model_train_time": "2023-04-25T17:45:31Z",
 # In[2]:
 
 
-model = joblib.load('model/15NearestNeighbors')
-model.set_params(n_jobs=4, weights='distance')
+model = joblib.load('model/RandomForestClassifier50')
 
 def predict(location, result):
     X_pred = result.copy()
